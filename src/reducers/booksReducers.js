@@ -30,7 +30,7 @@ export function booksReducers(state={books:[
       // Buscar el libro por el indice y retornar ese libro
       const indexToDelete = currentBookToDelete.findIndex(
          function(book){
-            return book.id === action.payload.id;
+            return book.id == action.payload;
          }
       )
       // Eliminar el libro por el indice
